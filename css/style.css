@@ -29,6 +29,13 @@ p {
     width: 100%;
   }
 
+#options{
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 999;
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
