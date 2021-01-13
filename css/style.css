@@ -8,7 +8,7 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: whitesmoke;
 }
 
 p {
@@ -16,13 +16,14 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: whitesmoke;
 }
 
 .parallax-container {
   min-height: 380px;
   line-height: 5;
   height: 100vh;
+  background-color: rgba(156, 127, 0, 0.459);
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
@@ -59,7 +60,21 @@ p {
   font-size: inherit;
 }
 
+/* label focus color */
+.input-field input:focus + label, .input-field textarea:focus + label {
+  color: #827717 !important;
+}
+/* label underline focus color */
+.input-field input:focus, textarea:focus {
+  border-bottom: 1px solid #827717 !important;
+  box-shadow: 0 1px 0 0 #827717 !important;
+}
+/* valid color */
+.input-field input.valid {
+  border-bottom: 1px solid #827717 !important;
+  box-shadow: 0 1px 0 0 #827717 !important;
+}
+
 footer.page-footer {
   margin: 0;
-  background-color: #444 !important;
 }
