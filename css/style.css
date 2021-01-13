@@ -21,8 +21,8 @@ p {
 
 .parallax-container {
   min-height: 380px;
-  line-height: 0;
-  height: auto;
+  line-height: 5;
+  height: 100vh;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
@@ -54,4 +54,5 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background-color: #444 !important;
 }
