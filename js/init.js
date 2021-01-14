@@ -11,6 +11,14 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+$.ajax({
+  url: 'https://randomuser.me/api/',
+  dataType: 'json',
+  success: function(data) {
+    console.log(data);
+  }
+});
+
 //Modal trigger
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.modal');
