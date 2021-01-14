@@ -52,7 +52,7 @@ function getEnterpriseInfo(selectedInfo){
   modal.innerHTML = `
     <div class="modal-content">
       <div class="row">
-          <h4 class="col s11">${enterpriseInfo.nombre}</h4>
+          <h4 class="col s11">${enterpriseInfo.titulo}</h4>
           <a href="#!" class="col s1 modal-close waves-effect waves-green btn-flat">X</a>
       </div>
       <p>${enterpriseInfo.contenido}</p>
