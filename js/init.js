@@ -17,13 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.modal');
   var instances = M.Modal.init(elems, options);
 
-  var productsGrid = document.querySelector('#productsGrid')
+  //Creation of all the cards with the products
+  let productsGrid = document.querySelector('#productsGrid')
   prodList.forEach((prod) => {
     productsGrid.innerHTML += `
       <div class="col s12 m4 l3 center">
         <div class="card">
             <div class="card-image">
-                <img src="background1.jpg" width="100%" alt="producto">
+                <img src="${prod.foto}" width="100%" height="300" alt="producto">
                 <a class="btn-floating halfway-fab waves-effect waves-light lime darken-4 modal-trigger"
                     href="#modal1" onclick="getProdInfo('${prod.nombre}')"><i class="material-icons">remove_red_eye</i></a>
             </div>
@@ -53,7 +54,7 @@ function getEnterpriseInfo(selectedInfo){
     <div class="modal-content">
       <div class="row">
           <h4 class="col s11">${enterpriseInfo.titulo}</h4>
-          <a href="#!" class="col s1 modal-close waves-effect waves-green btn-flat">X</a>
+          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit">X</a>
       </div>
       <p>${enterpriseInfo.contenido}</p>
     </div>
@@ -76,11 +77,27 @@ function getProdInfo(selectedProd) {
     <div class="modal-content">
       <div class="row">
           <h4 class="col s11">${prodInfo.nombre}</h4>
-          <a href="#!" class="col s1 modal-close waves-effect waves-green btn-flat">X</a>
+          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit">X</a>
       </div>
       <p>Capacidad: ${prodInfo.capacidad}</p>
       <h5 class="green-text">${prodInfo.precio}</h5>
       <p>${prodInfo.info}</p>
+      <p>
+        <b> Específicos </b><br>
+        Clase: ${prodInfo.especificos.clase}<br>
+        Graduación: ${prodInfo.especificos.graduacion}<br>
+        Barrica: ${prodInfo.especificos.barrica}<br>
+        Reposo: ${prodInfo.especificos.tmpReposo}
+      </p>
+      <p>
+        <b> Ficha organoléptica </b><br>
+        Color: ${prodInfo.organoleptica.color}<br>
+        Aroma: ${prodInfo.organoleptica.aroma}<br>
+        Barrica: ${prodInfo.organoleptica.gusto}<br>
+      </p>
+      <div class="modal-footer">
+        <p>Botella hecha por artesanos</p>
+      </div>
     </div>
   `
 }
@@ -105,45 +122,39 @@ const enterpriseInfoList = [
 // Product list with details
 const prodList = [
   {
-    nombre: "alfa",
-    capacidad: "1 ltr",
-    precio: "200 MXN",
-    info: "This is the info of the product",
+    foto: "https://picsum.photos/200/400",
+    nombre: "Tequila reposado 50ml",
+    capacidad: "0.5 ltr",
+    precio: "79 MXN",
+    info: "100% Agave. Reposado",
+    especificos: {
+      clase: "Extra añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "36 meses",
+    },
+    organoleptica: {
+      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
+      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
+      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+    }
   },
   {
-    nombre: "gama",
-    capacidad: "1 ltr",
-    precio: "200 MXN",
-    info: "This is the info of the product",
-  },
-  {
-    nombre: "delta",
-    capacidad: "1 ltr",
-    precio: "200 MXN",
-    info: "This is the info of the product",
-  },
-  {
-    nombre: "beta",
-    capacidad: "1 ltr",
-    precio: "200 MXN",
-    info: "This is the info of the product",
-  },
-  {
-    nombre: "omega",
-    capacidad: "1 ltr",
-    precio: "200 MXN",
-    info: "This is the info of the product",
-  },
-  {
-    nombre: "tango",
-    capacidad: "1 ltr",
-    precio: "200 MXN",
-    info: "This is the info of the product",
-  },
-  {
-    nombre: "primer",
-    capacidad: "5 ltr",
-    precio: "700 MXN",
-    info: "This is the info of the product primer",
+    foto: "https://picsum.photos/200/400",
+    nombre: "Tequila reposado 100ml",
+    capacidad: "0.5 ltr",
+    precio: "79 MXN",
+    info: "100% Agave. Reposado",
+    especificos: {
+      clase: "Extra añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "36 meses",
+    },
+    organoleptica: {
+      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
+      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
+      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+    }
   },
 ]

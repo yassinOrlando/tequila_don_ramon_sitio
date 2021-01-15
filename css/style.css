@@ -30,6 +30,10 @@ p {
     width: 100%;
   }
 
+.exit:hover{
+  color: red;
+}
+
 #options{
   position: fixed;
   bottom: 15px;
