@@ -11,6 +11,10 @@ nav .brand-logo {
   color: whitesmoke;
 }
 
+#logo-container img{
+  margin-top: 5px;
+}
+
 p {
   line-height: 2rem;
 }
