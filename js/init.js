@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="card-image">
                 <img src="${prod.foto}" width="100%" alt="producto">
                 <a class="btn-floating halfway-fab waves-effect waves-light lime darken-4 modal-trigger"
-                    href="#modal1" onclick="getProdInfo('${prod.nombre}')"><i class="material-icons">remove_red_eye</i></a>
+                    href="#modal1" onclick="getProdInfo('${prod.nombre}')"><i class="material-icons">add</i></a>
             </div>
             <div class="card-content">
                 <span class="card-title">${prod.nombre}</span>
@@ -54,7 +54,7 @@ function getEnterpriseInfo(selectedInfo) {
     <div class="modal-content">
       <div class="row">
           <h4 class="col s11">${enterpriseInfo.titulo}</h4>
-          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit">X</a>
+          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit"><b>X</b></a>
       </div>
       <p>${enterpriseInfo.contenido}</p>
     </div>
@@ -77,7 +77,7 @@ function getProdInfo(selectedProd) {
     <div class="modal-content">
       <div class="row">
           <h4 class="col s11">${prodInfo.nombre}</h4>
-          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit">X</a>
+          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit"><b>X</b></a>
       </div>
       <p><b>Capacidad:</b> ${prodInfo.capacidad}</p>
       <h5 class="green-text">${prodInfo.precio}</h5>
@@ -107,15 +107,32 @@ function getProdInfo(selectedProd) {
 const enterpriseInfoList = [
   {
     titulo: "Historia",
-    contenido: "Historia de la empresa",
+    contenido: `Tequila Don Ramón es una empresa
+    productora y comercializadora de tequila,
+    fundada en 1996 que ha logrado posicionarse
+    dentro de la industrial como un producto de
+    calidad hecho para satisfacer los paladares
+    más exigentes. Además, es pionero en la
+    técnica 'corte diamante' con la que se
+    ofrecen productos personalizados para
+    cualquier tipo de eventos, siendo así una
+    gran oportunidad de negocio.
+    `,
   },
   {
     titulo: "Misión",
-    contenido: "Misión de la empresa",
+    contenido: `Inmortalizamos tus más grandes momentos a
+    través de una botella especial personalizada
+    con licores de alta calidad.
+    `,
   },
   {
     titulo: "Visión",
-    contenido: "Visión de la empresa",
+    contenido: `Ser franquicia líder que se caracterice por
+    grabar las mejores experiencias de nuestros
+    clientes por medio de botellas
+    personalizadas.
+    `,
   },
 ]
 
