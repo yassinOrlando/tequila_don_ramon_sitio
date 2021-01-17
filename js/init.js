@@ -174,4 +174,76 @@ const prodList = [
       gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
     }
   },
+  {
+    foto: "https://cdn.shopify.com/s/files/1/0385/3280/8843/products/TEQUILADONRAMONPUNTADIAMANTE750ML_580x.jpg?v=1594167815",
+    nombre: "Tequila reposado 200ml",
+    capacidad: "0.5 ltr",
+    precio: "79 MXN",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
+    especificos: {
+      clase: "Extra añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "36 meses",
+    },
+    organoleptica: {
+      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
+      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
+      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+    }
+  },
+  {
+    foto: "https://vinosamerica.com/wp-content/uploads/2020/05/OVEJANEGRA_TDR_Imagen-BA-Swarovski-Plata-750-ml.jpg",
+    nombre: "Tequila reposado 300ml",
+    capacidad: "0.5 ltr",
+    precio: "79 MXN",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
+    especificos: {
+      clase: "Extra añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "36 meses",
+    },
+    organoleptica: {
+      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
+      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
+      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+    }
+  },
+  {
+    foto: "https://dontequila.com.mx/cdrpersonalizado/wp-content/uploads/2020/06/tequila-don-ramon-edicion-limitada-extra-anejo-750ml.jpg",
+    nombre: "Tequila reposado 400ml",
+    capacidad: "0.5 ltr",
+    precio: "79 MXN",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
+    especificos: {
+      clase: "Extra añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "36 meses",
+    },
+    organoleptica: {
+      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
+      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
+      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+    }
+  },
+  {
+    foto: "https://www.chedraui.com.mx/medias/63847800003-02-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8ODU1NTl8aW1hZ2UvanBlZ3xoZDQvaDRmLzg4MDY5NjE2MTA3ODIuanBnfDc4OTJlMGU4NWQwNTRmNTA2NDQ3NDAwZjA1MzU2YjJiYWI0ZWYzOWM1M2FkOWE5MWRiMTFkMDhjZDQwNjc2ZDk",
+    nombre: "Tequila reposado 500ml",
+    capacidad: "0.5 ltr",
+    precio: "79 MXN",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
+    especificos: {
+      clase: "Extra añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "36 meses",
+    },
+    organoleptica: {
+      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
+      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
+      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+    }
+  },
 ]

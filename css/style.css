@@ -48,6 +48,10 @@ p, a{
   color: red;
 }
 
+.historia{
+  filter:brightness(70%);
+}
+
 #options{
   position: fixed;
   bottom: 15px;
