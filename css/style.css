@@ -71,8 +71,10 @@ p, a{
 }
 
 @media only screen and (max-width : 992px) {
+  h1, h2, h3, h4, h5, h6{
+    font-size: 30px;
+  }
   .parallax-container .section {
-    position: absolute;
     top: 40%;
   }
   #index-banner .section {
