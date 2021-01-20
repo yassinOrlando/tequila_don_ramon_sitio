@@ -54,7 +54,7 @@ function getEnterpriseInfo(selectedInfo) {
     <div class="modal-content">
       <div class="row">
           <h4 class="col s11">${enterpriseInfo.titulo}</h4>
-          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit"><b>X</b></a>
+          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
       </div>
       <p>${enterpriseInfo.contenido}</p>
     </div>
@@ -77,27 +77,31 @@ function getProdInfo(selectedProd) {
     <div class="modal-content">
       <div class="row">
           <h4 class="col s11">${prodInfo.nombre}</h4>
-          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit"><b>X</b></a>
+          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
       </div>
-      <p><b>Capacidad:</b> ${prodInfo.capacidad}</p>
-      <h5 class="green-text">${prodInfo.precio}</h5>
-      <p>${prodInfo.info}</p>
-      <p>
-        <b> Específicos </b><br>
-        <b>Clase:</b> ${prodInfo.especificos.clase}<br>
-        <b>Graduación:</b> ${prodInfo.especificos.graduacion}<br>
-        <b>Barrica:</b> ${prodInfo.especificos.barrica}<br>
-        <b>Reposo:</b> ${prodInfo.especificos.tmpReposo}
-      </p>
-      <p>
-        <b> Ficha organoléptica </b><br>
-        <b>Color:</b> ${prodInfo.organoleptica.color}<br>
-        <b>Aroma:</b> ${prodInfo.organoleptica.aroma}<br>
-        <b>Barrica:</b> ${prodInfo.organoleptica.gusto}<br>
-      </p>
-    </div>
-    <div class="modal-footer">
-      <a class="btn-flat">Botella hecha por artesanos</a>
+      <div class="row">
+        <div class="col m4" id="img-prod-modal">
+          <img src="${prodInfo.foto}" width="100%">
+        </div>
+        <div class="col s12 m8">
+          <p><b>Capacidad:</b> ${prodInfo.capacidad}</p>
+          <h5 class="green-text">${prodInfo.precio}</h5>
+          <p>${prodInfo.info}</p>
+          <p>
+            <b> Específicos </b><br>
+            <b>Clase:</b> ${prodInfo.especificos.clase}<br>
+            <b>Graduación:</b> ${prodInfo.especificos.graduacion}<br>
+            <b>Barrica:</b> ${prodInfo.especificos.barrica}<br>
+            <b>Reposo:</b> ${prodInfo.especificos.tmpReposo}
+          </p>
+          <p>
+            <b> Ficha organoléptica </b><br>
+            <b>Color:</b> ${prodInfo.organoleptica.color}<br>
+            <b>Aroma:</b> ${prodInfo.organoleptica.aroma}<br>
+            <b>Barrica:</b> ${prodInfo.organoleptica.gusto}<br>
+          </p>
+        </div>
+      </div>
     </div>
   `
 }

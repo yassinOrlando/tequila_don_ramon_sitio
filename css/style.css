@@ -13,12 +13,19 @@ nav ul a,
 nav .brand-logo {
   color: whitesmoke;
 }
+.green{
+  background-color: #CEBD24;
+}
 
 #logo-container img{
   margin-top: 5px;
 }
 #logo{
   filter: invert(100%);
+}
+
+#landing-p{
+  font-size: 20px;
 }
 
 p {
@@ -44,6 +51,9 @@ p, a{
     width: 100%;
   }
 
+.exit i{
+  height: 1rem;
+}
 .exit:hover{
   color: red;
 }
@@ -66,9 +76,12 @@ p, a{
   height: 70vh;
 }
 
+
+
 .carousel .indicators{
   filter: invert(100%);
 }
+
 
 @media only screen and (max-width : 992px) {
   h1, h2, h3, h4, h5, h6{
@@ -81,10 +94,18 @@ p, a{
     top: 10%;
   }
 }
+@media only screen and (min-width : 992px) {
+  .carousel-item{
+    width: 25% !important;
+  }
+}
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  #img-prod-modal{
+    display: none;
   }
 }
 
