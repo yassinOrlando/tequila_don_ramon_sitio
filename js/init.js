@@ -77,8 +77,8 @@ function getEnterpriseInfo(selectedInfo) {
   modal.innerHTML = `
     <div class="modal-content">
       <div class="row">
-          <h4 class="col s11">${enterpriseInfo.titulo}</h4>
-          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
+          <h4 class="col s10 m11">${enterpriseInfo.titulo}</h4>
+          <a href="#!" class="col s2 m1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
       </div>
       <p>${enterpriseInfo.contenido}</p>
     </div>
