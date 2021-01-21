@@ -3,10 +3,34 @@
 
     $('.sidenav').sidenav();
     $('.parallax').parallax();
-    $('.carousel').carousel();
-    $('.carousel').carousel({
-      indicators: true
-    });
+
+    if ($(window).width() < 767) {
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
+    } else {
+      $('.carousel').removeClass('carousel-slider center');
+      $('.carousel').carousel({
+        indicators: true
+      });
+    }
+
+    $(document).load($(window).bind("resize", checkPosition));
+    function checkPosition() {
+      if ($(window).width() < 767) {
+        $('.carousel').addClass('carousel-slider center');
+        $('.carousel.carousel-slider').carousel({
+          fullWidth: true,
+          indicators: true
+        });
+      } else {
+        $('.carousel').removeClass('carousel-slider center');
+        $('.carousel').carousel({
+          indicators: true
+        });
+      }
+    }
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
@@ -76,8 +100,8 @@ function getProdInfo(selectedProd) {
   modal.innerHTML = `
     <div class="modal-content">
       <div class="row">
-          <h4 class="col s11">${prodInfo.nombre}</h4>
-          <a href="#!" class="col s1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
+          <h4 class="col s10 m11">${prodInfo.nombre}</h4>
+          <a href="#!" class="col s2 m1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
       </div>
       <div class="row">
         <div class="col m4" id="img-prod-modal">

@@ -102,8 +102,13 @@ p, a{
   }
 }
 @media only screen and (min-width : 992px) {
-  .carousel-item{
-    width: 25% !important;
+  .carousel{
+    height: 70vh !important;
+  }
+  .carousel-item img{
+    width: 250% !important;
+    margin-top: -60px;
+    margin-left: -50%;
   }
 }
 
