@@ -68,10 +68,12 @@ p, a{
 
 #enterprise-info-modal{
   width: 60%;
-  height: 350px;
+  height: 420px;
 }
 #enterprise-info-modal #modal-img{
   position: fixed;
+  background-size: cover;
+  background-repeat: repeat;
   left: 0;
   right: 0;
   z-index: 1;

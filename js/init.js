@@ -236,7 +236,7 @@ const prodList = [
     foto: "https://www.chedraui.com.mx/medias/638478000064-00-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8ODE4ODd8aW1hZ2UvanBlZ3xoZWIvaDdiLzEwMjQwNDk2ODYxMjE0LmpwZ3xlMTM1NGUxMGVjOGZjMmZhYmI3ODAxZGUyMzA1NzAwZTZiYTc0NTRiZTM5OWQ2NmRjMjY0ZWNiMDJkNTExY2Qy",
     nombre: "Tequila reposado 1 50ml",
     capacidad: "0.5 ltr",
-    precio: "79.75 MXN",
+    precio: "79.75 MXN (c/u)",
     cantidad: "48 Pack",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
@@ -255,7 +255,7 @@ const prodList = [
     foto: "https://www.chedraui.com.mx/medias/638478000064-00-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8ODE4ODd8aW1hZ2UvanBlZ3xoZWIvaDdiLzEwMjQwNDk2ODYxMjE0LmpwZ3xlMTM1NGUxMGVjOGZjMmZhYmI3ODAxZGUyMzA1NzAwZTZiYTc0NTRiZTM5OWQ2NmRjMjY0ZWNiMDJkNTExY2Qy",
     nombre: "Tequila reposado 2 50ml",
     capacidad: "0.5 ltr",
-    precio: "79.75 MXN",
+    precio: "79.75 MXN (c/u)",
     cantidad: "48 Pack",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
@@ -274,7 +274,7 @@ const prodList = [
     foto: "https://www.chedraui.com.mx/medias/638478000163-00-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8OTk4Njh8aW1hZ2UvanBlZ3xoMTAvaDljLzEwMjQwNTE1MjQ0MDYyLmpwZ3wxNzg2MDdmZjY0NDE1NmY1ZjU2MzVkMjBkNTc5ODc5MGZiYjIyNWE5N2I3NDAxM2JlYzE5NzA1YWMwOTcyYzhj",
     nombre: "Tequila reposado 100ml",
     capacidad: "0.5 ltr",
-    precio: "79 MXN",
+    precio: "79 MXN (c/u)",
     cantidad: "48 Pack",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
@@ -293,7 +293,7 @@ const prodList = [
     foto: "https://cdn.shopify.com/s/files/1/0385/3280/8843/products/TEQUILADONRAMONPUNTADIAMANTE750ML_580x.jpg?v=1594167815",
     nombre: "Tequila reposado 200ml",
     capacidad: "0.5 ltr",
-    precio: "79 MXN",
+    precio: "79 MXN (c/u)",
     cantidad: "48 Pack",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
@@ -312,7 +312,7 @@ const prodList = [
     foto: "https://vinosamerica.com/wp-content/uploads/2020/05/OVEJANEGRA_TDR_Imagen-BA-Swarovski-Plata-750-ml.jpg",
     nombre: "Tequila reposado 300ml",
     capacidad: "0.5 ltr",
-    precio: "79 MXN",
+    precio: "79 MXN (c/u)",
     cantidad: "48 Pack",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
@@ -331,7 +331,7 @@ const prodList = [
     foto: "https://dontequila.com.mx/cdrpersonalizado/wp-content/uploads/2020/06/tequila-don-ramon-edicion-limitada-extra-anejo-750ml.jpg",
     nombre: "Tequila reposado 400ml",
     capacidad: "0.5 ltr",
-    precio: "79 MXN",
+    precio: "79 MXN (c/u)",
     cantidad: "48 Pack",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
@@ -350,7 +350,7 @@ const prodList = [
     foto: "https://www.chedraui.com.mx/medias/63847800003-02-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8ODU1NTl8aW1hZ2UvanBlZ3xoZDQvaDRmLzg4MDY5NjE2MTA3ODIuanBnfDc4OTJlMGU4NWQwNTRmNTA2NDQ3NDAwZjA1MzU2YjJiYWI0ZWYzOWM1M2FkOWE5MWRiMTFkMDhjZDQwNjc2ZDk",
     nombre: "Tequila reposado 500ml",
     capacidad: "0.5 ltr",
-    precio: "79 MXN",
+    precio: "79 MXN (c/u)",
     cantidad: "48 Pack",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
