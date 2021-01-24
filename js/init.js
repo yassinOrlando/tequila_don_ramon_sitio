@@ -233,136 +233,310 @@ const prodList = [
     `,
   },
   {
-    foto: "https://www.chedraui.com.mx/medias/638478000064-00-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8ODE4ODd8aW1hZ2UvanBlZ3xoZWIvaDdiLzEwMjQwNDk2ODYxMjE0LmpwZ3xlMTM1NGUxMGVjOGZjMmZhYmI3ODAxZGUyMzA1NzAwZTZiYTc0NTRiZTM5OWQ2NmRjMjY0ZWNiMDJkNTExY2Qy",
-    nombre: "Tequila reposado 1 50ml",
-    capacidad: "0.5 ltr",
-    precio: "79.75 MXN (c/u)",
-    cantidad: "48 Pack",
+    foto: "img/productos/tequila_reposado_50ml.jpg",
+    nombre: "Tequila reposado 50ml",
+    capacidad: "50 ml",
+    precio: "$79.75 (c/u)",
+    cantidad: "48 piezas",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
-      clase: "Extra añejo",
-      graduacion: "40% Alc. Vol",
+      clase: "Reposado",
+      graduacion: "38% Alc. Vol",
       barrica: "Roble Americano",
-      tmpReposo: "36 meses",
+      tmpReposo: "6 meses",
     },
     organoleptica: {
-      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
-      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
-      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+      color: "Brillante con intensos tonos dorados",
+      aroma: "Sutil sensación alcohólica, suave al olfato, fresco con notas aromáticas de madera, agave cocido, manzana y ciruela.",
+      gusto: "Balance perfecto, además consistente promesa entre cuerpo, aroma y sabor, notas claras adquiridas durante su maduración como son madera, caramelo, especias y frutas."
     }
   },
   {
-    foto: "https://www.chedraui.com.mx/medias/638478000064-00-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8ODE4ODd8aW1hZ2UvanBlZ3xoZWIvaDdiLzEwMjQwNDk2ODYxMjE0LmpwZ3xlMTM1NGUxMGVjOGZjMmZhYmI3ODAxZGUyMzA1NzAwZTZiYTc0NTRiZTM5OWQ2NmRjMjY0ZWNiMDJkNTExY2Qy",
-    nombre: "Tequila reposado 2 50ml",
-    capacidad: "0.5 ltr",
-    precio: "79.75 MXN (c/u)",
-    cantidad: "48 Pack",
-    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
-    especificos: {
-      clase: "Extra añejo",
-      graduacion: "40% Alc. Vol",
-      barrica: "Roble Americano",
-      tmpReposo: "36 meses",
-    },
-    organoleptica: {
-      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
-      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
-      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
-    }
-  },
-  {
-    foto: "https://www.chedraui.com.mx/medias/638478000163-00-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8OTk4Njh8aW1hZ2UvanBlZ3xoMTAvaDljLzEwMjQwNTE1MjQ0MDYyLmpwZ3wxNzg2MDdmZjY0NDE1NmY1ZjU2MzVkMjBkNTc5ODc5MGZiYjIyNWE5N2I3NDAxM2JlYzE5NzA1YWMwOTcyYzhj",
-    nombre: "Tequila reposado 100ml",
-    capacidad: "0.5 ltr",
-    precio: "79 MXN (c/u)",
-    cantidad: "48 Pack",
-    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
-    especificos: {
-      clase: "Extra añejo",
-      graduacion: "40% Alc. Vol",
-      barrica: "Roble Americano",
-      tmpReposo: "36 meses",
-    },
-    organoleptica: {
-      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
-      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
-      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
-    }
-  },
-  {
-    foto: "https://cdn.shopify.com/s/files/1/0385/3280/8843/products/TEQUILADONRAMONPUNTADIAMANTE750ML_580x.jpg?v=1594167815",
+    foto: "img/productos/tequila_reposado_200ml.jpg",
     nombre: "Tequila reposado 200ml",
-    capacidad: "0.5 ltr",
-    precio: "79 MXN (c/u)",
-    cantidad: "48 Pack",
-    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
+    capacidad: "200 ml",
+    precio: "$137.50 (c/u)",
+    cantidad: "24 piezas",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 24 piezas)",
     especificos: {
-      clase: "Extra añejo",
-      graduacion: "40% Alc. Vol",
+      clase: "Reposado",
+      graduacion: "38% Alc. Vol",
       barrica: "Roble Americano",
-      tmpReposo: "36 meses",
+      tmpReposo: "6 meses",
     },
     organoleptica: {
-      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
-      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
-      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+      color: "Brillante con intensos tonos dorados.",
+      aroma: "Sutil sensación alcohólica, suave al olfato, fresco con notas aromáticas de madera, agave cocido, manzana y ciruela.",
+      gusto: "Balance perfecto, además consistente promesa entre cuerpo, aroma y sabor, notas claras adquiridas durante su maduración como son madera, caramelo, especias y frutas."
     }
   },
   {
-    foto: "https://vinosamerica.com/wp-content/uploads/2020/05/OVEJANEGRA_TDR_Imagen-BA-Swarovski-Plata-750-ml.jpg",
-    nombre: "Tequila reposado 300ml",
-    capacidad: "0.5 ltr",
-    precio: "79 MXN (c/u)",
-    cantidad: "48 Pack",
-    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
+    foto: "img/productos/tequila_reposado_750ml.jpg",
+    nombre: "Tequila reposado 750ml",
+    capacidad: "750 ml",
+    precio: "$296.80 (c/u)",
+    cantidad: "12 piezas",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 12 piezas)",
     especificos: {
-      clase: "Extra añejo",
-      graduacion: "40% Alc. Vol",
+      clase: "Reposado",
+      graduacion: "38% Alc. Vol",
       barrica: "Roble Americano",
-      tmpReposo: "36 meses",
+      tmpReposo: "6 meses",
     },
     organoleptica: {
-      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
-      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
-      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+      color: "Brillante con intensos tonos dorados.",
+      aroma: "Sutil sensación alcohólica, suave al olfato, fresco con notas aromáticas de madera, agave cocido, manzana y ciruela.",
+      gusto: "Balance perfecto, además consistente promesa entre cuerpo, aroma y sabor, notas claras adquiridas durante su maduración como son madera, caramelo, especias y frutas."
     }
   },
   {
-    foto: "https://dontequila.com.mx/cdrpersonalizado/wp-content/uploads/2020/06/tequila-don-ramon-edicion-limitada-extra-anejo-750ml.jpg",
-    nombre: "Tequila reposado 400ml",
-    capacidad: "0.5 ltr",
-    precio: "79 MXN (c/u)",
-    cantidad: "48 Pack",
-    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
+    foto: "img/productos/tequila_reposado_1ltr.jpg",
+    nombre: "Tequila reposado 1 litro",
+    capacidad: "1 litro",
+    precio: "$360.75 (c/u)",
+    cantidad: "12 piezas",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 12 piezas)",
     especificos: {
-      clase: "Extra añejo",
-      graduacion: "40% Alc. Vol",
+      clase: "Reposado",
+      graduacion: "38% Alc. Vol",
       barrica: "Roble Americano",
-      tmpReposo: "36 meses",
+      tmpReposo: "6 meses",
     },
     organoleptica: {
-      color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
-      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
-      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+      color: "Brillante con intensos tonos dorados.",
+      aroma: "Sutil sensación alcohólica, suave al olfato, fresco con notas aromáticas de madera, agave cocido, manzana y ciruela.",
+      gusto: "Balance perfecto, además consistente promesa entre cuerpo, aroma y sabor, notas claras adquiridas durante su maduración como son madera, caramelo, especias y frutas."
     }
   },
   {
-    foto: "https://www.chedraui.com.mx/medias/63847800003-02-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8ODU1NTl8aW1hZ2UvanBlZ3xoZDQvaDRmLzg4MDY5NjE2MTA3ODIuanBnfDc4OTJlMGU4NWQwNTRmNTA2NDQ3NDAwZjA1MzU2YjJiYWI0ZWYzOWM1M2FkOWE5MWRiMTFkMDhjZDQwNjc2ZDk",
-    nombre: "Tequila reposado 500ml",
-    capacidad: "0.5 ltr",
-    precio: "79 MXN (c/u)",
-    cantidad: "48 Pack",
-    info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
+    foto: "img/productos/tequila_reposado_1750ltr.jpg",
+    nombre: "Tequila reposado 1.750 litros",
+    capacidad: "1.750 litros",
+    precio: "$649.75 (c/u)",
+    cantidad: "6 piezas",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 6 piezas)",
     especificos: {
-      clase: "Extra añejo",
+      clase: "Reposado",
+      graduacion: "38% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "6 meses",
+    },
+    organoleptica: {
+      color: "Brillante con intensos tonos dorados.",
+      aroma: "Sutil sensación alcohólica, suave al olfato, fresco con notas aromáticas de madera, agave cocido, manzana y ciruela.",
+      gusto: "Balance perfecto, además consistente promesa entre cuerpo, aroma y sabor, notas claras adquiridas durante su maduración como son madera, caramelo, especias y frutas."
+    }
+  },
+  {
+    foto: "img/productos/tequila_reposado_3ltr.jpg",
+    nombre: "Tequila reposado 3 litros",
+    capacidad: "3 litros",
+    precio: "$1,128.87 (c/u)",
+    cantidad: "4 piezas",
+    info: "100% Agave. Reposado (Pedido mínimo de una caja con 4 piezas)",
+    especificos: {
+      clase: "Reposado",
+      graduacion: "38% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "6 meses",
+    },
+    organoleptica: {
+      color: "Brillante con intensos tonos dorados.",
+      aroma: "Sutil sensación alcohólica, suave al olfato, fresco con notas aromáticas de madera, agave cocido, manzana y ciruela.",
+      gusto: "Balance perfecto, además consistente promesa entre cuerpo, aroma y sabor, notas claras adquiridas durante su maduración como son madera, caramelo, especias y frutas."
+    }
+  },
+  {
+    foto: "img/productos/tequila_plata_platinum_700ml.jpg",
+    nombre: "Tequila plata platinum 700ml",
+    capacidad: "700 ml",
+    precio: "$494.79 (c/u)",
+    cantidad: "6 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 6 piezas)",
+    especificos: {
+      clase: "Blanco",
+      graduacion: "35% Alc. Vol",
+      barrica: "--",
+      tmpReposo: "--",
+    },
+    organoleptica: {
+      color: "Blanco cristalino, brilloso intenso.",
+      aroma: "Cítricos y agave de gran calidad",
+      gusto: "Excelente tequila blanco, al degustar por el paladar tiene un sabor fino y duradero a agave selecto"
+    }
+  },
+  {
+    foto: "img/productos/tequila_plata_punta_diamante_750ml.jpg",
+    nombre: "Tequila plata punta diamante 750ml",
+    capacidad: "750 ml",
+    precio: "$494.79 (c/u)",
+    cantidad: "12 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 12 piezas)",
+    especificos: {
+      clase: "Blanco",
+      graduacion: "35% Alc. Vol",
+      barrica: "--",
+      tmpReposo: "--",
+    },
+    organoleptica: {
+      color: "Blanco cristalino, brillante, natural.",
+      aroma: "Sutil sensación alcohólica, fresco con delicadas notas de agave, y larga permanencia en la boca.",
+      gusto: "Balance perfecto entre sabor y aroma."
+    }
+  },
+  {
+    foto: "img/productos/tequila_plata_platinum_colores_700ml.jpg",
+    nombre: "Colores para plata platinum",
+    capacidad: "700 ml",
+    precio: "",
+    cantidad: "6 piezas",
+    info: `Si requieres varios diseños, se incrementa $22 pesos por cada uno, permitiendo que puedas combinar cajas con varios diseños. La presentación
+      Tequila Don Ramón Plata Platinium puede grabarse a color con monto de $25 pesos por botella, con los siguientes colores-Azul, Plata, Violeta,
+      Negro y Rojo.
+      La entrega del pedido se realiza en 10 días hábiles a partir de la autorización del diseño.`,
+    especificos: {
+      clase: "Blanco",
+      graduacion: "35% Alc. Vol",
+      barrica: "--",
+      tmpReposo: "--",
+    },
+    organoleptica: {
+      color: "Blanco cristalino, brilloso intenso.",
+      aroma: "Cítricos y agave de gran calidad",
+      gusto: "Excelente tequila blanco, al degustar por el paladar tiene un sabor fino y duradero a agave selecto"
+    }
+  },
+  {
+    foto: "img/productos/tequila_edicion_especial_plata_750ml.jpg",
+    nombre: "Tequila edición limitada plata 750ml",
+    capacidad: "750 ml",
+    precio: "$2,265.25 (c/u)",
+    cantidad: "4 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
+    especificos: {
+      clase: "Blanco",
+      graduacion: "40% Alc. Vol",
+      barrica: "--",
+      tmpReposo: "--",
+    },
+    organoleptica: {
+      color: "Blanco cristalino, brillante, natural con destellos de hojuelas de plata.",
+      aroma: "Sutil sensación alcohólica, fresco con delicadas notas de agave, y larga permanencia en la boca. Balance perfecto entre sabor y aroma.",
+      gusto: "Amable y suave con notas cítricas, la persistencia que tiene es media alta y su retrogusto es noble."
+    }
+  },
+  {
+    foto: "img/productos/tequila_edicion_especial_anejo_750ml.jpg",
+    nombre: "Tequila edición limitada añejo 750ml",
+    capacidad: "750 ml",
+    precio: "$3,025 (c/u)",
+    cantidad: "4 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
+    especificos: {
+      clase: "Añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "12 meses",
+    },
+    organoleptica: {
+      color: "Ámbar de alta densidad, muy brillante y con destellos de hojuelas de oro, es untuoso.",
+      aroma: "Con notas a cítricos como naranja y maracuyá a su vez toques herbáceos a eucalipto, así como membrillo, frutos secos, dátiles y aromas a canela y cacao con una intensidad aromática media alta y un carácter elegante.",
+      gusto: "El primer ataque intenso y muy potente, rearmando en boca los aromas de guayaba y eucalipto, con persistencia alta y buena intensidad. Su retrogusto es largo y cremoso con notas minerales y especias a canela, clavo y comino."
+    }
+  },
+  {
+    foto: "img/productos/tequila_edicion_especial_extra_anejo_750ml.jpg",
+    nombre: "Tequila edición limitada extra añejo 750ml",
+    capacidad: "750 ml",
+    precio: "$3,517.50 (c/u)",
+    cantidad: "4 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
+    especificos: {
+      clase: "Extra Añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "36 meses",
+    },
+    organoleptica: {
+      color: "Color tabaco con tonalidades caoba y destellos de ambarino. Brillante y untuoso con una densidad media alta.",
+      aroma: "Expresivo y potente, con intensidad aromática a guayaba, caramelos, piloncillo, vainilla, café, cacao y notas especiadas de clavo.",
+      gusto: "Buen ataque con recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en retrogusto elegante, resaltando especias y un rico toque a clavo."
+    }
+  },
+  {
+    foto: "img/productos/tequila_edicion_limitada_plata_swarovski_750ml.jpg",
+    nombre: "Tequila edición limitada plata Swarovski 750ml",
+    capacidad: "750 ml",
+    precio: "$5,827.50 (c/u)",
+    cantidad: "4 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
+    especificos: {
+      clase: "Blanco",
+      graduacion: "40% Alc. Vol",
+      barrica: "--",
+      tmpReposo: "--",
+    },
+    organoleptica: {
+      color: "Tonalidades cristalinas con hojuelas de plata Cristalino, brillante y natural.",
+      aroma: "Fresco con delicadas notas de agave. Intensidad aromática media y carácter herbal.",
+      gusto: "Amable y suave con notas cítricas evolucionando a notas tostadas y minerales. Larga permanencia en la boca."
+    }
+  },
+  {
+    foto: "img/productos/tequila_edicion_limitada_anejo_swarovski_750ml.jpg",
+    nombre: "Tequila edición limitada añejo Swarovski 750ml",
+    capacidad: "750 ml",
+    precio: "$6,877.50 (c/u)",
+    cantidad: "4 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
+    especificos: {
+      clase: "Añejo",
+      graduacion: "40% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "12 meses",
+    },
+    organoleptica: {
+      color: "Ambar de alta intensidad, muy brillantes y con destellos de hojuelas de oro, es untuoso.",
+      aroma: "Notas aromáticas marcadas a madera, agave cocido y frutos secos.",
+      gusto: "Intenso y potente, con persistencia alta y buena intensidad. Con notas minerales y especias a canela, clavo y comino."
+    }
+  },
+  {
+    foto: "img/productos/tequila_edicion_limitada_extra_anejo_swarovski_750ml.jpg",
+    nombre: "Tequila edición limitada extra añejo Swarovski 750ml",
+    capacidad: "750 ml",
+    precio: "$7,927.50 (c/u)",
+    cantidad: "4 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
+    especificos: {
+      clase: "Extra Añejo",
       graduacion: "40% Alc. Vol",
       barrica: "Roble Americano",
       tmpReposo: "36 meses",
     },
     organoleptica: {
       color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",
-      aroma: "Notas aromáticas marcadas a madera, especies, frutos secos y dulce. Con un cuerpo robusto",
-      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante"
+      aroma: "Notas aromáticas marcadas a madera, especias, frutos secos y dulce. Con un cuerpo robusto.",
+      gusto: "Recuerdos de frutos del bosque, cerezas, madera con persistencia media alta, resaltando la pimienta en el retrogusto elegante."
+    }
+  },
+  {
+    foto: "img/productos/mezcal_don_ramon.jpg",
+    nombre: "Mezcal Don Ramón Jóven 750ml",
+    capacidad: "750 ml",
+    precio: "$860.25 (c/u)",
+    cantidad: "6 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 6 piezas)",
+    especificos: {
+      clase: "Mezcal de Salmiana Premium",
+      graduacion: "40% Alc. Vol",
+      barrica: "--",
+      tmpReposo: "--",
+    },
+    organoleptica: {
+      color: "Transparente brillante.",
+      aroma: "Con notas ahumadas, frescas, herbales y sutilmente frutales, además de delicadas notas dulces.",
+      gusto: "Sensación de suavidad al paladar que demuestra una agradable experiencia con una majestuosa permanencia en nuestra boca que deleita nuestros sentidos."
     }
   },
 ]
