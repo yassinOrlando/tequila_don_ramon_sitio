@@ -94,7 +94,7 @@ function getEnterpriseInfo(selectedInfo) {
 
   modal.innerHTML = `
     <div class="modal-content" id="enterprise-info-modal">
-      <div id="modal-img"></div>
+      <div id="modal-img" style="background-image: url('${enterpriseInfo.img}');"></div>
       <div id="modal-img-txt">
         <div class="row">
             <h4 class="col s10 m11">${enterpriseInfo.titulo}</h4>
@@ -168,10 +168,11 @@ function getprod(selectedProd) {
 const enterpriseInfoList = [
   {
     titulo: "Historia",
+    img: "img/HISTORIA.jpg",
     contenido: `Tequila Don Ramón es una empresa
     productora y comercializadora de tequila,
     fundada en 1996 que ha logrado posicionarse
-    dentro de la industrial como un producto de
+    dentro de la industria como un producto de
     calidad hecho para satisfacer los paladares
     más exigentes. Además, es pionero en la
     técnica 'corte diamante' con la que se
@@ -182,6 +183,7 @@ const enterpriseInfoList = [
   },
   {
     titulo: "Misión",
+    img: "img/MISION.jpg",
     contenido: `Inmortalizamos tus más grandes momentos a
     través de una botella especial personalizada
     con licores de alta calidad.
@@ -189,6 +191,7 @@ const enterpriseInfoList = [
   },
   {
     titulo: "Visión",
+    img: "img/VISION.jpeg",
     contenido: `Ser franquicia líder que se caracterice por
     grabar las mejores experiencias de nuestros
     clientes por medio de botellas
