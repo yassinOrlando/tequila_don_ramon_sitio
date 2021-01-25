@@ -236,29 +236,30 @@
         <div class="section">
             <h4 class="center">MÁNDENOS UN MENSAJE</h4>
             <div class="row">
-                <form class="col s12" method="GET" action="mailto:pedro.gutierrez@tequiladonramon.com.mx" enctype="text/plain">
+                <form class="col s12" method="post" action="mailto:pedro.gutierrez@tequiladonramon.com.mx" enctype="text/plain">
                     <div class="row">
                         <div class="input-field">
-                            <input placeholder="Ej. Juan Pérez" id="first_name" type="text" class="validate" required>
+                            <input type="text" name="asunto" value="Mensaje desde Don Ramon sitio web" hidden/>
+                            <input placeholder="Ej. Juan Pérez" name="nombre" id="first_name" type="text" class="validate" required>
                             <label for="first_name">Nombre completo</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field">
-                            <input placeholder="Ej. miemail@gmail.com" id="first_name" type="email" class="validate"
+                            <input placeholder="Ej. miemail@gmail.com" name="mail" id="first_name" type="email" class="validate"
                                 required>
                             <label for="first_name">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field">
-                            <input placeholder="Ej. 9930000000" id="first_name" type="tel" class="validate">
+                            <input placeholder="Ej. 9930000000" name="telefono" id="first_name" type="tel" class="validate">
                             <label for="first_name">Teléfono</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field">
-                            <textarea id="textarea1" class="materialize-textarea" required></textarea>
+                            <textarea id="textarea1" name="mensaje" class="materialize-textarea" required></textarea>
                             <label for="textarea1">Mensaje</label>
                         </div>
                     </div>
@@ -300,6 +301,7 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    
 
 </body>
 
