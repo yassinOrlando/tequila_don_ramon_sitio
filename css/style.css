@@ -54,6 +54,10 @@ p, a{
   .parallax-container .section {
     width: 100%;
   }
+  .parallax-container a {
+    color: white;
+    text-decoration: underline;
+  }
 
 .exit i{
   height: 1rem;
