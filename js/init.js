@@ -110,8 +110,8 @@ function getEnterpriseInfo(selectedInfo) {
 function getprod(selectedProd) {
   let modal = document.querySelector('#modal1')
 
-  prodList.forEach((prod) => {
-    if (prod.nombre == selectedProd) {
+  prodList.forEach((prod, index) => {
+    if (prod.nombre == selectedProd && index != 1 ) {
       modal.innerHTML = `
         <div class="modal-content">
           <div class="row">
@@ -159,6 +159,42 @@ function getprod(selectedProd) {
           </div>
         </div>
       `
+    } else if (index == 1){
+      modal.innerHTML = `
+      <div class="modal-content" id="enterprise-info-modal">
+        <div id="modal-img2" style="background-image: url('${prod.foto}');"></div>
+        <div id="modal-img-txt">
+            <div class="row">
+            <h4 class="col s10 m11">${prod.nombre}</h4>
+            <a href="#!" class="col s2 m1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
+        </div>
+        <div class="row">
+          <div class="col m4" id="img-prod-modal">
+            <img src="${prod.foto}" width="100%">
+          </div>
+          <div class="col s12 m8">
+            <p><b>Capacidad:</b> ${prod.capacidad}</p>
+            <h5 class="green-text">${prod.precio}</h5>
+            <p>${prod.info}</p>
+            <p>Presentación: ${prod.cantidad}</p>
+            <p>
+              <b> Específicos </b><br>
+              <b>Clase:</b> ${prod.especificos.clase}<br>
+              <b>Graduación:</b> ${prod.especificos.graduacion}<br>
+              <b>Barrica:</b> ${prod.especificos.barrica}<br>
+              <b>Reposo:</b> ${prod.especificos.tmpReposo}
+            </p>
+            <p>
+              <b> Ficha organoléptica </b><br>
+              <b>Color:</b> ${prod.organoleptica.color}<br>
+              <b>Aroma:</b> ${prod.organoleptica.aroma}<br>
+              <b>Barrica:</b> ${prod.organoleptica.gusto}<br>
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+      `
     }
   });
 }
@@ -178,7 +214,17 @@ const enterpriseInfoList = [
     técnica 'corte diamante' con la que se
     ofrecen productos personalizados para
     cualquier tipo de eventos, siendo así una
-    gran oportunidad de negocio.
+    gran oportunidad de negocio. <br>
+    Se fundó en 1996 con el propósito de ofrecer un Tequila con
+    carácter, pero suave al paladar. Sus botellas están hechas
+    por manos artesanas, de ahí deriva su originalidad.
+    Contamos con un diverso portafolio de bebidas hechas
+    100% con Agave Supremo de los Altos de Jalisco, cada una
+    de ellas cuenta con una característica que las hace únicas y
+    originales. <br>
+    En la actualidad nuestros Tequilas se pueden encontrar en
+    las principales cadenas de autoservicio y tiendas de vinos y
+    licores.
     `,
   },
   {
@@ -477,7 +523,7 @@ const prodList = [
       clase: "Blanco",
       graduacion: "40% Alc. Vol",
       barrica: "--",
-      tmpReposo: "--",
+      tmpReposo: "6 meses a 3 años",
     },
     organoleptica: {
       color: "Tonalidades cristalinas con hojuelas de plata Cristalino, brillante y natural.",
@@ -496,7 +542,7 @@ const prodList = [
       clase: "Añejo",
       graduacion: "40% Alc. Vol",
       barrica: "Roble Americano",
-      tmpReposo: "12 meses",
+      tmpReposo: "6 meses a 3 años",
     },
     organoleptica: {
       color: "Ambar de alta intensidad, muy brillantes y con destellos de hojuelas de oro, es untuoso.",
@@ -515,7 +561,7 @@ const prodList = [
       clase: "Extra Añejo",
       graduacion: "40% Alc. Vol",
       barrica: "Roble Americano",
-      tmpReposo: "36 meses",
+      tmpReposo: "6 meses a 3 años",
     },
     organoleptica: {
       color: "Color Tabaco con tonalidades caoba y destellos de ambarino.",

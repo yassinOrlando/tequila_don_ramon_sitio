@@ -74,7 +74,7 @@ p, a{
   width: 60%;
   height: 420px;
 }
-#enterprise-info-modal #modal-img{
+#modal-img{
   position: fixed;
   background-size: cover;
   background-repeat: repeat;
@@ -85,14 +85,32 @@ p, a{
   display: block;
   background-image: url('../img/HISTORIA.jpg');
   width: 100%;
-  height: 100%;
+  height: 120%;
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -o-filter: blur(2px);
   -ms-filter: blur(2px);
   filter: blur(2px) brightness(50%);
 }
-#enterprise-info-modal #modal-img-txt{
+#modal-img2{
+  position: fixed;
+  background-size: cover;
+  background-repeat: repeat;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin-top: -22px;
+  display: block;
+  background-image: url('../img/HISTORIA.jpg');
+  width: 100%;
+  height: 250%;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px) brightness(50%);
+}
+#modal-img-txt{
   color: white;
   position: fixed;
   left: 0;
