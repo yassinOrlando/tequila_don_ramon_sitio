@@ -108,6 +108,7 @@ p, a{
   -o-filter: blur(2px);
   -ms-filter: blur(2px);
   filter: blur(2px) brightness(50%);
+  overflow: hidden;
 }
 #modal-img-txt{
   color: white;
