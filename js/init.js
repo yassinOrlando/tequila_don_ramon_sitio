@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let productsGrid = document.querySelector('#productsGrid')
   prodList.forEach((prod, index) => {
     if (index === 0) {  //The first card is not a product, is a card with a list of all the presentations available for the products
-      productsGrid.innerHTML += `
+      productsGrid.innerHTML += /*template*/`
         <div class="col s12 m4 l3 center">
           <div class="card grey darken-3 white-text">
               <div class="card-image">
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       `
     } else {
-      productsGrid.innerHTML += `
+      productsGrid.innerHTML += /*template*/`
         <div class="col s12 m4 l3 center">
           <div class="card">
               <div class="card-image">
@@ -92,7 +92,7 @@ function getEnterpriseInfo(selectedInfo) {
     }
   })
 
-  modal.innerHTML = `
+  modal.innerHTML = /*template*/`
     <div class="modal-content" id="enterprise-info-modal">
       <div id="modal-img" style="background-image: url('${enterpriseInfo.img}');"></div>
       <div id="modal-img-txt">
@@ -110,43 +110,45 @@ function getEnterpriseInfo(selectedInfo) {
 function getprod(selectedProd) {
   let modal = document.querySelector('#modal1')
 
-  prodList.forEach((prod, index) => {
-    if (prod.nombre == selectedProd && index != 1 ) {
-      modal.innerHTML = `
-        <div class="modal-content">
-          <div class="row">
-              <h4 class="col s10 m11">${prod.nombre}</h4>
-              <a href="#!" class="col s2 m1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
-          </div>
-          <div class="row">
-            <div class="col m4" id="img-prod-modal">
-              <img src="${prod.foto}" width="100%">
+  prodList.forEach((prod) => {
+    if(prod.nombre == selectedProd){
+      modal.innerHTML = /*template*/`
+      <div class="modal-content" id="enterprise-info-modal">
+        <div id="modal-img2" style="background-image: url('${prod.foto}');"></div>
+        <div id="modal-img-txt">
+            <div class="row">
+                <h4 class="col s10 m11">${prod.nombre}</h4>
+                <a href="#!" class="col s2 m1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
             </div>
-            <div class="col s12 m8">
-              <p><b>Capacidad:</b> ${prod.capacidad}</p>
-              <h5 class="green-text">${prod.precio}</h5>
-              <p>${prod.info}</p>
-              <p>Presentación: ${prod.cantidad}</p>
-              <p>
-                <b> Específicos </b><br>
-                <b>Clase:</b> ${prod.especificos.clase}<br>
-                <b>Graduación:</b> ${prod.especificos.graduacion}<br>
-                <b>Barrica:</b> ${prod.especificos.barrica}<br>
-                <b>Reposo:</b> ${prod.especificos.tmpReposo}
-              </p>
-              <p>
-                <b> Ficha organoléptica </b><br>
-                <b>Color:</b> ${prod.organoleptica.color}<br>
-                <b>Aroma:</b> ${prod.organoleptica.aroma}<br>
-                <b>Barrica:</b> ${prod.organoleptica.gusto}<br>
-              </p>
+            <div class="row">
+              <div class="col m4" id="img-prod-modal">
+                <img src="${prod.foto}" width="100%">
+              </div>
+              <div class="col s12 m8">
+                <p><b>Capacidad:</b> ${prod.capacidad}</p>
+                <h5 class="green-text">${prod.precio}</h5>
+                <p>${prod.info}</p>
+                <p>Presentación: ${prod.cantidad}</p>
+                <p>
+                  <b> Específicos </b><br>
+                  <b>Clase:</b> ${prod.especificos.clase}<br>
+                  <b>Graduación:</b> ${prod.especificos.graduacion}<br>
+                  <b>Barrica:</b> ${prod.especificos.barrica}<br>
+                  <b>Reposo:</b> ${prod.especificos.tmpReposo}
+                </p>
+                <p>
+                  <b> Ficha organoléptica </b><br>
+                  <b>Color:</b> ${prod.organoleptica.color}<br>
+                  <b>Aroma:</b> ${prod.organoleptica.aroma}<br>
+                  <b>Barrica:</b> ${prod.organoleptica.gusto}<br>
+                </p>
+              </div>
             </div>
-          </div>
         </div>
+      </div>
       `
-      return
-    } else if (prod.titulo == selectedProd) {
-      modal.innerHTML = `
+    }else if (prod.titulo == selectedProd) {
+      modal.innerHTML = /*template*/`
         <div class="modal-content">
           <div class="row">
               <h4 class="col s10 m11">${prod.titulo}</h4>
@@ -158,42 +160,6 @@ function getprod(selectedProd) {
             </div>
           </div>
         </div>
-      `
-    } else if (index == 1){
-      modal.innerHTML = `
-      <div class="modal-content" id="enterprise-info-modal">
-        <div id="modal-img2" style="background-image: url('${prod.foto}');"></div>
-        <div id="modal-img-txt">
-            <div class="row">
-            <h4 class="col s10 m11">${prod.nombre}</h4>
-            <a href="#!" class="col s2 m1 modal-close waves-effect waves-red btn-flat exit"><b><i class="large material-icons">fullscreen_exit</i></b></a>
-        </div>
-        <div class="row">
-          <div class="col m4" id="img-prod-modal">
-            <img src="${prod.foto}" width="100%">
-          </div>
-          <div class="col s12 m8">
-            <p><b>Capacidad:</b> ${prod.capacidad}</p>
-            <h5 class="green-text">${prod.precio}</h5>
-            <p>${prod.info}</p>
-            <p>Presentación: ${prod.cantidad}</p>
-            <p>
-              <b> Específicos </b><br>
-              <b>Clase:</b> ${prod.especificos.clase}<br>
-              <b>Graduación:</b> ${prod.especificos.graduacion}<br>
-              <b>Barrica:</b> ${prod.especificos.barrica}<br>
-              <b>Reposo:</b> ${prod.especificos.tmpReposo}
-            </p>
-            <p>
-              <b> Ficha organoléptica </b><br>
-              <b>Color:</b> ${prod.organoleptica.color}<br>
-              <b>Aroma:</b> ${prod.organoleptica.aroma}<br>
-              <b>Barrica:</b> ${prod.organoleptica.gusto}<br>
-            </p>
-          </div>
-        </div>
-        </div>
-      </div>
       `
     }
   });
@@ -221,10 +187,7 @@ const enterpriseInfoList = [
     Contamos con un diverso portafolio de bebidas hechas
     100% con Agave Supremo de los Altos de Jalisco, cada una
     de ellas cuenta con una característica que las hace únicas y
-    originales. <br>
-    En la actualidad nuestros Tequilas se pueden encontrar en
-    las principales cadenas de autoservicio y tiendas de vinos y
-    licores.
+    originales.
     `,
   },
   {
@@ -251,7 +214,7 @@ const prodList = [
   {
     foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8u07n90fxuWJl8lf_5o_wlRboyM0UKMcnHQ&usqp=CAU",
     titulo: "Botellas personalizadas a tu gusto",
-    info: `
+    info: /*template*/`
       <ul class="collection with-header">
         <li class="collection-header"> <h5> Eventos sociales </h5> </li>
         <li class="collection-item"> Bodas </li>
