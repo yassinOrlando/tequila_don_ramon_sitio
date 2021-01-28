@@ -126,7 +126,7 @@ function getprod(selectedProd) {
               </div>
               <div class="col s12 m8">
                 <p><b>Capacidad:</b> ${prod.capacidad}</p>
-                <h5 class="green-text">${prod.precio}</h5>
+                <h5 class="light-green-text">${prod.precio}</h5>
                 <p>${prod.info}</p>
                 <p>Presentación: ${prod.cantidad}</p>
                 <p>

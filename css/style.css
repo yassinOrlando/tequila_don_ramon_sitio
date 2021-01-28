@@ -182,6 +182,11 @@ p, a{
   #img-prod-modal{
     display: none;
   }
+  #modal-img2{
+    background-size: contain !important;
+    width: 100% !important;
+    height: 250% !important;
+  }
 }
 
 .icon-block {
