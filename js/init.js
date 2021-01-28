@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let productsGrid = document.querySelector('#productsGrid')
   prodList.forEach((prod, index) => {
     if (index === 0) {  //The first card is not a product, is a card with a list of all the presentations available for the products
-      productsGrid.innerHTML += /*template*/`
+      productsGrid.innerHTML += `
         <div class="col s12 m4 l3 center">
           <div class="card grey darken-3 white-text">
               <div class="card-image">
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       `
     } else {
-      productsGrid.innerHTML += /*template*/`
+      productsGrid.innerHTML += `
         <div class="col s12 m4 l3 center">
           <div class="card">
               <div class="card-image">
@@ -92,7 +92,7 @@ function getEnterpriseInfo(selectedInfo) {
     }
   })
 
-  modal.innerHTML = /*template*/`
+  modal.innerHTML = `
     <div class="modal-content" id="enterprise-info-modal">
       <div id="modal-img" style="background-image: url('${enterpriseInfo.img}');"></div>
       <div id="modal-img-txt">
@@ -111,8 +111,9 @@ function getprod(selectedProd) {
   let modal = document.querySelector('#modal1')
 
   prodList.forEach((prod) => {
-    if(prod.nombre == selectedProd){
-      modal.innerHTML = /*template*/`
+    if (prod.nombre == selectedProd) {
+      let barrica = prod.especificos.barrica != null ? `<b>Barrica:</b> ${prod.especificos.barrica}<br> ` : ``
+      modal.innerHTML = `
       <div class="modal-content" id="enterprise-info-modal">
         <div id="modal-img2" style="background-image: url('${prod.foto}');"></div>
         <div id="modal-img-txt">
@@ -133,22 +134,26 @@ function getprod(selectedProd) {
                   <b> Específicos </b><br>
                   <b>Clase:</b> ${prod.especificos.clase}<br>
                   <b>Graduación:</b> ${prod.especificos.graduacion}<br>
-                  <b>Barrica:</b> ${prod.especificos.barrica}<br>
+                  `
+                  +
+                  barrica
+                  +
+                  `
                   <b>Reposo:</b> ${prod.especificos.tmpReposo}
                 </p>
                 <p>
                   <b> Ficha organoléptica </b><br>
                   <b>Color:</b> ${prod.organoleptica.color}<br>
                   <b>Aroma:</b> ${prod.organoleptica.aroma}<br>
-                  <b>Barrica:</b> ${prod.organoleptica.gusto}<br>
+                  <b>Gusto:</b> ${prod.organoleptica.gusto}<br>
                 </p>
               </div>
             </div>
         </div>
       </div>
       `
-    }else if (prod.titulo == selectedProd) {
-      modal.innerHTML = /*template*/`
+    } else if (prod.titulo == selectedProd) {
+      modal.innerHTML = `
         <div class="modal-content">
           <div class="row">
               <h4 class="col s10 m11">${prod.titulo}</h4>
@@ -214,7 +219,7 @@ const prodList = [
   {
     foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8u07n90fxuWJl8lf_5o_wlRboyM0UKMcnHQ&usqp=CAU",
     titulo: "Botellas personalizadas a tu gusto",
-    info: /*template*/`
+    info: `
       <ul class="collection with-header">
         <li class="collection-header"> <h5> Eventos sociales </h5> </li>
         <li class="collection-item"> Bodas </li>
@@ -248,7 +253,7 @@ const prodList = [
     foto: "img/productos/tequila_reposado_50ml.jpg",
     nombre: "Tequila reposado 50ml",
     capacidad: "50 ml",
-    precio: "$79.75 (c/u)",
+    precio: "$79.00 (c/u)",
     cantidad: "48 piezas",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 48 piezas)",
     especificos: {
@@ -267,7 +272,7 @@ const prodList = [
     foto: "img/productos/tequila_reposado_200ml.jpg",
     nombre: "Tequila reposado 200ml",
     capacidad: "200 ml",
-    precio: "$137.50 (c/u)",
+    precio: "$137.00 (c/u)",
     cantidad: "24 piezas",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 24 piezas)",
     especificos: {
@@ -286,7 +291,7 @@ const prodList = [
     foto: "img/productos/tequila_reposado_750ml.jpg",
     nombre: "Tequila reposado 750ml",
     capacidad: "750 ml",
-    precio: "$296.80 (c/u)",
+    precio: "$296.00 (c/u)",
     cantidad: "12 piezas",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 12 piezas)",
     especificos: {
@@ -305,7 +310,7 @@ const prodList = [
     foto: "img/productos/tequila_reposado_1ltr.jpg",
     nombre: "Tequila reposado 1 litro",
     capacidad: "1 litro",
-    precio: "$360.75 (c/u)",
+    precio: "$360.00 (c/u)",
     cantidad: "12 piezas",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 12 piezas)",
     especificos: {
@@ -324,7 +329,7 @@ const prodList = [
     foto: "img/productos/tequila_reposado_1750ltr.jpg",
     nombre: "Tequila reposado 1.750 litros",
     capacidad: "1.750 litros",
-    precio: "$649.75 (c/u)",
+    precio: "$649.00 (c/u)",
     cantidad: "6 piezas",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 6 piezas)",
     especificos: {
@@ -343,7 +348,7 @@ const prodList = [
     foto: "img/productos/tequila_reposado_3ltr.jpg",
     nombre: "Tequila reposado 3 litros",
     capacidad: "3 litros",
-    precio: "$1,128.87 (c/u)",
+    precio: "$1,128.00 (c/u)",
     cantidad: "4 piezas",
     info: "100% Agave. Reposado (Pedido mínimo de una caja con 4 piezas)",
     especificos: {
@@ -362,14 +367,14 @@ const prodList = [
     foto: "img/productos/tequila_plata_platinum_700ml.jpg",
     nombre: "Tequila plata platinum 700ml",
     capacidad: "700 ml",
-    precio: "$494.79 (c/u)",
+    precio: "$494.00 (c/u)",
     cantidad: "6 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 6 piezas)",
     especificos: {
       clase: "Blanco",
       graduacion: "35% Alc. Vol",
-      barrica: "--",
-      tmpReposo: "--",
+      barrica: null,
+      tmpReposo: "6 meses",
     },
     organoleptica: {
       color: "Blanco cristalino, brilloso intenso.",
@@ -381,14 +386,14 @@ const prodList = [
     foto: "img/productos/tequila_plata_punta_diamante_750ml.jpg",
     nombre: "Tequila plata punta diamante 750ml",
     capacidad: "750 ml",
-    precio: "$494.79 (c/u)",
+    precio: "$494.00 (c/u)",
     cantidad: "12 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 12 piezas)",
     especificos: {
       clase: "Blanco",
       graduacion: "35% Alc. Vol",
-      barrica: "--",
-      tmpReposo: "--",
+      barrica: "Roble Americano",
+      tmpReposo: "6 meses",
     },
     organoleptica: {
       color: "Blanco cristalino, brillante, natural.",
@@ -409,8 +414,8 @@ const prodList = [
     especificos: {
       clase: "Blanco",
       graduacion: "35% Alc. Vol",
-      barrica: "--",
-      tmpReposo: "--",
+      barrica: null,
+      tmpReposo: "6 meses",
     },
     organoleptica: {
       color: "Blanco cristalino, brilloso intenso.",
@@ -422,14 +427,14 @@ const prodList = [
     foto: "img/productos/tequila_edicion_especial_plata_750ml.jpg",
     nombre: "Tequila edición limitada plata 750ml",
     capacidad: "750 ml",
-    precio: "$2,265.25 (c/u)",
+    precio: "$2,265.00 (c/u)",
     cantidad: "4 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
     especificos: {
       clase: "Blanco",
       graduacion: "40% Alc. Vol",
-      barrica: "--",
-      tmpReposo: "--",
+      barrica: null,
+      tmpReposo: "6 meses",
     },
     organoleptica: {
       color: "Blanco cristalino, brillante, natural con destellos de hojuelas de plata.",
@@ -441,7 +446,7 @@ const prodList = [
     foto: "img/productos/tequila_edicion_especial_anejo_750ml.jpg",
     nombre: "Tequila edición limitada añejo 750ml",
     capacidad: "750 ml",
-    precio: "$3,025 (c/u)",
+    precio: "$3,025.00 (c/u)",
     cantidad: "4 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
     especificos: {
@@ -460,7 +465,7 @@ const prodList = [
     foto: "img/productos/tequila_edicion_especial_extra_anejo_750ml.jpg",
     nombre: "Tequila edición limitada extra añejo 750ml",
     capacidad: "750 ml",
-    precio: "$3,517.50 (c/u)",
+    precio: "$3,517.00 (c/u)",
     cantidad: "4 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
     especificos: {
@@ -479,13 +484,13 @@ const prodList = [
     foto: "img/productos/tequila_edicion_limitada_plata_swarovski_750ml.jpg",
     nombre: "Tequila edición limitada plata Swarovski 750ml",
     capacidad: "750 ml",
-    precio: "$5,827.50 (c/u)",
+    precio: "$5,827.00 (c/u)",
     cantidad: "4 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
     especificos: {
       clase: "Blanco",
       graduacion: "40% Alc. Vol",
-      barrica: "--",
+      barrica: null,
       tmpReposo: "6 meses a 3 años",
     },
     organoleptica: {
@@ -498,7 +503,7 @@ const prodList = [
     foto: "img/productos/tequila_edicion_limitada_anejo_swarovski_750ml.jpg",
     nombre: "Tequila edición limitada añejo Swarovski 750ml",
     capacidad: "750 ml",
-    precio: "$6,877.50 (c/u)",
+    precio: "$6,877.00 (c/u)",
     cantidad: "4 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
     especificos: {
@@ -517,7 +522,7 @@ const prodList = [
     foto: "img/productos/tequila_edicion_limitada_extra_anejo_swarovski_750ml.jpg",
     nombre: "Tequila edición limitada extra añejo Swarovski 750ml",
     capacidad: "750 ml",
-    precio: "$7,927.50 (c/u)",
+    precio: "$7,927.00 (c/u)",
     cantidad: "4 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 4 piezas)",
     especificos: {
@@ -536,14 +541,14 @@ const prodList = [
     foto: "img/productos/mezcal_don_ramon.jpg",
     nombre: "Mezcal Don Ramón Jóven 750ml",
     capacidad: "750 ml",
-    precio: "$860.25 (c/u)",
+    precio: "$860.00 (c/u)",
     cantidad: "6 piezas",
     info: "100% Agave. (Pedido mínimo de una caja con 6 piezas)",
     especificos: {
       clase: "Mezcal de Salmiana Premium",
       graduacion: "40% Alc. Vol",
-      barrica: "--",
-      tmpReposo: "--",
+      barrica: "tapón de corcho",
+      tmpReposo: "6 meses",
     },
     organoleptica: {
       color: "Transparente brillante.",

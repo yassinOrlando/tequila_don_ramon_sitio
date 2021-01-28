@@ -227,8 +227,9 @@
     <div class="container">
         <div class="section">
             <h4 class="center">MÁNDENOS UN MENSAJE</h4>
-            <div class="row">
-                <form class="col s12" method="post" action="mailto:pedro.gutierrez@tequiladonramon.com.mx" enctype="text/plain">
+            <div class="row center">
+                <!--//////////////////    It's showed only on desktop    //////////////////-->
+                <form class="col s12 hide-on-med-and-down" method="post" action="mailto:pedro.gutierrez@tequiladonramon.com.mx" enctype="text/plain">
                     <div class="row">
                         <div class="input-field">
                             <input type="text" name="asunto" value="Mensaje desde Don Ramon sitio web" hidden/>
@@ -257,6 +258,13 @@
                     </div>
                     <input type="submit" class="btn lime darken-4">
                 </form>
+                <!--//////////////////    On tablet and mobile it only shows the next buttons    //////////////////-->
+                <a class="waves-effect waves-light btn-large lime darken-4 hide-on-large-only" href="mailto:pedro.gutierrez@tequiladonramon.com.mx">
+                    <i class="material-icons right">mail</i>Enviar mensaje
+                </a>
+                <a class="waves-effect waves-light btn-large lime darken-4 hide-on-large-only" href="https://api.whatsapp.com/send?phone=+525560106391">
+                    <i class="material-icons right">phone</i>Whatsapp
+                </a>
             </div>
         </div>
     </div>
