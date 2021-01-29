@@ -383,6 +383,24 @@ const prodList = [
     }
   },
   {
+    foto: "img/productos/tequila_punta_diamante_750.png",
+    nombre: "Tequila punta diamante 750ml",
+    capacidad: "750 ml",
+    precio: "$317.00 (c/u)",
+    cantidad: "12 piezas",
+    info: "100% Agave. (Pedido mínimo de una caja con 12 piezas)",
+    especificos: {
+      graduacion: "35% Alc. Vol",
+      barrica: "Roble Americano",
+      tmpReposo: "6 a 8 meses",
+    },
+    organoleptica: {
+      color: "Amarillo oro con destellos dorados, limpio y brillante",
+      aroma: "Despliega notas de especias y hierbas con un toque a caramelo.",
+      gusto: "El primer trago envuelve el paladar con una entrada sutíl y untuosa, dejando notas de hierbas y cítricos."
+    }
+  },
+  {
     foto: "img/productos/tequila_plata_punta_diamante_750ml.jpg",
     nombre: "Tequila plata punta diamante 750ml",
     capacidad: "750 ml",
