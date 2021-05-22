@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (index === 0) {  //The first card is not a product, is a card with a list of all the presentations available for the products
       productsGrid.innerHTML += `
         <div class="col s12 m4 l3 center">
-          <div class="card grey darken-3 white-text">
+          <div class="card crd grey darken-3 white-text">
               <div class="card-image">
                   <img src="${prod.foto}" width="100%" alt="regalo">
                   <a class="btn-floating halfway-fab waves-effect waves-light lime darken-4 modal-trigger"
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       productsGrid.innerHTML += `
         <div class="col s12 m4 l3 center">
-          <div class="card">
+          <div class="card crd">
               <div class="card-image">
                   <img src="${prod.foto}" width="100%" alt="producto">
                   <a class="btn-floating halfway-fab waves-effect waves-light lime darken-4 modal-trigger"
