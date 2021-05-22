@@ -127,6 +127,10 @@ p, a{
   z-index: 999;
 }
 
+.card{
+  height: 410px;
+}
+
 #contacto-div{
   color: white;
   background-color: #444;
