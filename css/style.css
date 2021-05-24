@@ -191,6 +191,9 @@ p, a{
     width: 100% !important;
     height: 250% !important;
   }
+  .crd{
+    height: 550px;
+  }
 }
 
 .icon-block {
